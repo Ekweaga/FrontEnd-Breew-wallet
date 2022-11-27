@@ -102,6 +102,27 @@ const testimonials = [
     media:"@sandree"
   },
 ]
+
+const resources = [
+  {
+    heading:"Best platform to trade your BTC on your phone",
+    date:"Mar 5, 2022",
+    more:"Read more",
+    img:"/Rectangle 4518.png"
+  },
+  {
+    heading:"Best platform to trade your BTC on your phone",
+    date:"Mar 5, 2022",
+    more:"Read more",
+    img:"/Rectangle 4518.png"
+  },
+  {
+    heading:"Best platform to trade your BTC on your phone",
+    date:"Mar 5, 2022",
+    more:"Read more",
+    img:"/Rectangle 4518.png"
+  }
+]
   return (
     <>
       <Head>
@@ -382,8 +403,8 @@ Lowest rates in tne market
       <h1 className='font-bold text-4xl leading-[50px] w-[450px]'>See what people are<br/> saying about Breew</h1>
 
       <div className='flex gap-[30px] mt-[50px] ml-[80px]'>
-            <button className="bg-[#0582CA] p-2 rounded-2xl w-[150px] text-white h-[60px] shadow">Download app</button>
-            <button className="bg-white shadow p-2 rounded-2xl w-[150px] text-[#0582CA] h-[60px]">View pricing</button>
+            <button className="bg-[#0582CA] p-2 rounded-2xl w-[150px] text-white h-[60px] shadow font-bold">Download app</button>
+            <button className="bg-white shadow p-2 rounded-2xl w-[150px] text-[#0582CA] h-[60px] font-bold">All reviews</button>
             </div>
 
     </div>
@@ -419,6 +440,99 @@ Lowest rates in tne market
             }
           </div>
         </div>
+
+      </div>
+
+     </div>
+
+
+     <div className="h-[600px]">
+<div className='  flex flex-col items-center justify-center'>
+     <div>
+        <div className='flex gap-[20px] mt-[50px] '>
+      <h3 className='text-[#0582CA] font-bold text-2xl'>07</h3> <span className='text-2xl text-[#929292]'>-</span> <h3 className='text-[#0582CA] font-bold text-2xl'>08</h3>
+    </div>
+    <div className='flex items-center'>
+      <h1 className='font-bold text-4xl leading-[50px] w-[450px]'>Latest resources</h1>
+
+    
+
+    </div>
+        </div>
+
+        <div className='flex flex-col items-center justify-center'>
+          <div className='grid grid-cols-3 gap-[30px] mt-[50px]'>
+            {
+              resources.map((item)=>{
+              return( <div className='w-[220px] bg-white rounded-2xl shadow h-[250px] flex flex-col items-center p-4 '>
+                <Image src={item.img} width={200} height={100}/>
+                <div className='mt-[10px]'>
+                  <p className='text-sm'>APPS - {item.date}</p>
+                  <h2 className='font-bold text-sm mt-[7px] mb-[10px]'>{item.heading}</h2>
+                  <span className='mt-[20px] font-bold text-sm text-[#0582CA]'>{item.more}</span>
+                </div>
+              </div>) 
+              })
+            }
+          </div>
+          <div className='flex gap-[30px] mt-[50px]'>
+            <button className="bg-white p-3 rounded-2xl w-[230px] text-[#0582CA]  h-[60px] shadow flex gap-[20px] items-center justify-center text-sm font-bold cursor-pointer"> <Image src="/Group 8738.png" width={30} height={100}/>Download for IOS</button>
+           
+            </div>
+        </div>
+
+
+
+        </div>
+     </div>
+
+
+     <div className='h-[670px] bg-[#E6E6E6]'>
+      <div className='flex flex-col items-center justify-center'>  
+         <div className='flex gap-[20px] mt-[50px] '>
+      <h3 className='text-[#0582CA] font-bold text-2xl'>08</h3> <span className='text-2xl text-[#929292]'>-</span> <h3 className='text-[#0582CA] font-bold text-2xl'>08</h3>
+    </div>
+    <h1 className='font-bold text-4xl leading-[50px] w-[450px] text-center'>Download the crypto<br/> wallet of the future</h1>
+
+    <div className='flex gap-[30px] mt-[50px]'>
+            <button className="bg-white p-3 rounded-2xl w-[230px] text-[#0582CA]  h-[60px] shadow flex gap-[20px] items-center justify-center text-sm font-bold cursor-pointer"> <Image src="/Group 8738.png" width={30} height={100}/>Download for IOS</button>
+            <button className="bg-white shadow p-3 rounded-2xl w-[230px] text-[#0582CA] h-[60px] flex gap-[20px] items-center justify-center text-sm font-bold cursor-pointer"><Image src="/Group 8739.png" width={30} height={100}/>Download For Apple</button>
+            </div>
+
+            <div className="relative mt-[50px]">
+
+            <div className='absolute -left-[20px] top-[00px]'>
+            <Image src="/dollar-dollar-color.png" width={70} height={50}/>
+            </div>
+            <div className='absolute right-[0px] top-[00px]'>
+            <Image src="/eth-dynamic-color.png" width={70} height={50}/>
+            </div>
+            <div className='absolute right-[50px] bottom-0'>
+            <Image src="/yuan-dynamic-color (1).png" width={70} height={50}/>
+            </div>
+            <Image src="/Group 8696.png" width={300} height={100}/>
+
+            </div>
+      </div>
+
+     </div>
+
+
+     <div className='mt-[50px] h-[200px]'>
+
+      <div className="flex justify-around items-center">
+
+        <div className='w-[400px]'>
+          <h1 className='font-bold text-2xl'>Breew</h1>
+
+          <p>Breew gives you the opportunity to buy rapidly growing crypto currency from your phone</p>
+        </div>
+
+      <div className='flex gap-[30px] mt-[50px]'>
+            <button className="bg-white p-3 rounded-2xl w-[230px] text-[#0582CA]  h-[60px] shadow flex gap-[20px] items-center justify-center text-sm font-bold cursor-pointer"> <Image src="/Group 8738.png" width={30} height={100}/>Download for IOS</button>
+            <button className="bg-white shadow p-3 rounded-2xl w-[230px] text-[#0582CA] h-[60px] flex gap-[20px] items-center justify-center text-sm font-bold cursor-pointer"><Image src="/Group 8739.png" width={30} height={100}/>Download For Apple</button>
+            </div>
+
 
       </div>
 
