@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 
 export default function Home() {
@@ -133,11 +134,11 @@ const resources = [
 
       <Navbar/>
 
-      <header className='-mt-[70px]'>
-        <div className='flex justify-between items-center'>
-          <div className='ml-[150px] -mt-[50px]'>
-            <h1 className='text-6xl leading-[80px] font-bold'>Buy rapidly <br/>growing <span className='text-[#0582CA]'>crypto </span><br/>right from your<br/> phone</h1>
-            <p className='w-[550px] mt-[25px]'>The fastest growing currencies are in high demand for smart functionalities . We take care of searching for the next high rising crypto for your speedy transactions</p>
+      <header className='md:-mt-[70px] mt-[100px]'>
+        <div className='flex justify-between items-center flex-col md:flex-row'>
+          <div className='md:ml-[150px] -mt-[50px] px-4'>
+            <h1 className='md:text-6xl text-4xl md:leading-[80px] font-bold'>Buy rapidly <br/>growing <span className='text-[#0582CA]'>crypto </span><br/>right from your<br/> phone</h1>
+            <p className='md:w-[550px] mt-[25px]'>The fastest growing currencies are in high demand for smart functionalities . We take care of searching for the next high rising crypto for your speedy transactions</p>
             <div className='flex gap-[30px] mt-[50px]'>
             <button className="bg-[#0582CA] p-2 rounded-2xl w-[150px] text-white h-[60px] shadow">Download app</button>
             <button className="bg-white shadow p-2 rounded-2xl w-[150px] text-[#0582CA] h-[60px]">View pricing</button>
@@ -153,7 +154,7 @@ const resources = [
             <div className='absolute left-[10px] bottom-[200px]'>
             <Image src="/yuan-dynamic-color (1).png" width={150} height={50}/>
             </div>
-            <div className=' bg-[#EAEAEA] h-[400px] w-[300px] rounded-2xl absolute top-[20%] left-[10%] z-1' >
+            <div className=' h-[400px] w-[300px] rounded-2xl absolute top-[20%] left-[10%] z-1' >
 
             </div>
             <div className='z-[666px]'>
@@ -165,19 +166,19 @@ const resources = [
       </header>
 
 
-<div className=' bg-[#EAEAEA] p-4 h-[1200px]'>
+<div className=' bg-[#EAEAEA] p-4 md:h-[1200px]'>
   <div className='flex flex-col items-center justify-center'>
 
-    <div className='flex gap-[20px] mt-[50px] '>
+    <div className='flex gap-[20px] mt-[50px]  '>
       <h3 className='text-[#0582CA] font-bold text-2xl'>01</h3> <span className='text-2xl text-[#929292]'>-</span> <h3 className='text-[#0582CA] font-bold text-2xl'>08</h3>
     </div>
     <div className='mt-[30px]'>
-      <h1 className="text-5xl font-bold text-center">Full featured to buy, <br/>trade and invest crypto</h1>
+      <h1 className="md:text-5xl text-3xl font-bold text-center">Full featured to buy, <br/>trade and invest crypto</h1>
     </div>
 
     <div className="mt-[50px]">
-      <div className='flex gap-[20px]'>
-        <div className='w-[600px] h-[330px] bg-white rounded-2xl overflow-hidden p-4 flex justify-between items-center'>
+      <div className='flex gap-[20px] flex-col md:flex-row'>
+        <div className='md:w-[600px] h-[330px] bg-white rounded-2xl overflow-hidden p-4 flex justify-between items-center'>
 
           <div>
           <Image src="/Group 8698.png" width={50} height={100}/>
@@ -190,7 +191,7 @@ const resources = [
 
         </div>
 
-        <div className='w-[300px] h-[330px] bg-white rounded-2xl p-4'>
+        <div className='md:w-[300px] h-[330px] bg-white rounded-2xl p-4'>
 
           <div className='mt-[70px]'>
           <Image src="/Group 8698.png" width={50} height={100}/>
@@ -204,10 +205,10 @@ const resources = [
       </div>
 
       <div className='mt-[20px]'>
-        <div className='grid grid-cols-3 gap-[20px]'>
+        <div className='grid grid-cols-1 md:grid-cols-3 gap-[20px]'>
           {boxes.map((item)=>{
             return (
-              <div className="bg-white w-[300px] h-[330px] rounded-2xl p-4">
+              <div className="bg-white md:w-[300px] h-[330px] rounded-2xl p-4">
                  
                  <div className='mt-[70px]'>
           <Image src={item.img} width={50} height={100}/>
@@ -236,17 +237,17 @@ const resources = [
 
 <div className='mt-[150px] flex items-center justify-center'>
 
-  <div className=' mx-auto flex gap-[30px]'>
+  <div className=' mx-auto flex gap-[30px] flex-col md:flex-row'>
     <div>
-    <div className='flex gap-[20px] mt-[50px] mb-[30px]'>
+    <div className='flex gap-[20px] mt-[50px] mb-[30px] px-3'>
       <h3 className='text-[#0582CA] font-bold text-2xl'>02</h3> <span className='text-2xl text-[#929292]'>-</span> <h3 className='text-[#0582CA] font-bold text-2xl'>08</h3>
     </div>
-    <div className='w-[400px]'>
+    <div className='md:w-[400px] px-3'>
       <h1 className='font-bold text-4xl mb-[30px]'>A crypto wallet<br/> from the future</h1>
       <p>Get the latest updates and functionalities using Breew wallet as primary source of holding crypto</p>
     </div>
     <div>
-      <ul className='font-bold flex flex-col gap-[20px] mt-[30px]'>
+      <ul className='font-bold flex flex-col gap-[20px] mt-[30px] px-3 md:px-0'>
         <li>
 Lowest rates in tne market
         </li>
@@ -269,14 +270,14 @@ Lowest rates in tne market
 
 <div className='mt-[150px] flex items-center justify-center'>
 
-  <div className=' mx-auto flex gap-[80px]'>
+  <div className=' mx-auto flex gap-[80px] flex-col md:flex-row'>
 
   <Image src="/Group 8717.png" width={450} height={100}/>
     <div>
-    <div className='flex gap-[20px] mt-[50px] mb-[30px]'>
+    <div className='flex gap-[20px] mt-[50px] mb-[30px] px-3 md:px-0'>
       <h3 className='text-[#0582CA] font-bold text-2xl'>03</h3> <span className='text-2xl text-[#929292]'>-</span> <h3 className='text-[#0582CA] font-bold text-2xl'>08</h3>
     </div>
-    <div className='w-[400px]'>
+    <div className='md:w-[400px] px-3'>
       <h1 className='font-bold text-4xl mb-[30px]'>Bullet proof <br/> security by design</h1>
       <p>Get all round security using flawless security measures and unbreakable design structure</p>
     </div>
@@ -299,12 +300,13 @@ Lowest rates in tne market
 
 </div>
     
-<div className='mt-[300px] flex items-center justify-center '>
+<div className='md:mt-[300px] flex items-center justify-center mt-[100px] '>
 
   <div className='relative h-[700px] p-4'>
 
   <div className='absolute right-[30px] -top-[130px] z-50'>
-      <div className='relative'>
+    <div className="md:block hidden">
+      <div className='relative z-10 '>
         <div className='absolute top-[90px] -left-[50px]'>
         <Image src="/thumb-up-dynamic-color.png" width={120} height={200}/>
         </div>
@@ -314,16 +316,16 @@ Lowest rates in tne market
       <Image src="/Group 8689.png" width={300} height={200}/>
       </div>
     
-    </div>
+    </div></div>
 
-  <div className='w-[900px] h-[400px] bg-[#0582CA] rounded-2xl text-white relative z-20' >
-  <div className='absolute left-0 right-0 z-1 bottom-0'>
+  <div className='md:w-[900px] md:h-[400px] bg-[#0582CA] rounded-2xl text-white relative z-20' >
+  <div className='absolute left-0 right-0 z-1 bottom-0 '>
         <Image src="/Mask group (3).png" width={850} height={100}/>
         </div>
-    <div className="p-4 z-50">
+    <div className="p-4 z-[9997777px]">
       <h2 className='text-4xl font-bold mt-[70px] '>Try the crypto wallet <br/>of the future, today</h2>
 
-      <div className='flex gap-[30px] mt-[50px]'>
+      <div className='flex gap-[30px] mt-[50px] flex-col md:flex-row'>
             <button className="bg-white p-3 rounded-2xl w-[230px] text-[#0582CA]  h-[60px] shadow flex gap-[20px] items-center justify-center text-sm font-bold cursor-pointer"> <Image src="/Group 8738.png" width={30} height={100}/>Download for IOS</button>
             <button className="bg-white shadow p-3 rounded-2xl w-[230px] text-[#0582CA] h-[60px] flex gap-[20px] items-center justify-center text-sm font-bold cursor-pointer"><Image src="/Group 8739.png" width={30} height={100}/>Download For Apple</button>
             </div>
@@ -340,8 +342,64 @@ Lowest rates in tne market
 
 
 
+<div className='mt-[50px] flex items-center justify-center md:hidden '>
 
-<div className='mt-[00px]'>
+  <div className='relative md:h-[700px] p-4'>
+
+  <div className='absolute right-[30px] -top-[130px] z-50'>
+      <div className='relative z-10'>
+        <div className='absolute top-[90px] -left-[50px]'>
+        <Image src="/thumb-up-dynamic-color.png" width={120} height={200}/>
+        </div>
+        <div className='absolute bottom-[90px] md:-right-[50px] right-0'>
+        <Image src="/chart-dynamic-color.png" width={120} height={200}/>
+        </div>
+      <Image src="/Group 8689.png" width={300} height={200}/>
+      </div>
+    
+    </div>
+
+  <div className='md:w-[900px] h-[380px] bg-[#0582CA] rounded-2xl text-white relative z-20 w-[400px]' >
+  
+    <div className="p-4 z-[9997777px]">
+      
+
+      
+    </div>
+  </div>
+  
+
+
+  </div>
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className='mt-[50px]'>
 
   <div className='flex flex-col items-center justify-center'>
 
@@ -353,7 +411,7 @@ Lowest rates in tne market
     </div>
 
 
-    <div className='flex gap-[60px] mt-[30px] h-[700px]'>
+    <div className='flex gap-[60px] mt-[30px] md:h-[700px] flex-col md:flex-row p-4'>
       <div className='relative bg-[#E6E6E6] rounded-2xl h-[500px]'>
         <Image src="/Mask group (4).png" width={350} height={200}/>
         <div className='absolute -bottom-[20px] -right-[70px]'>
@@ -366,13 +424,13 @@ Lowest rates in tne market
           {
             cryptos.map((item)=>{
               return (
-                <div className='flex gap-[30px] items-center mt-[30px]'>
+                <div className='flex gap-[30px] items-center mt-[30px] px-4'>
                   <Image src={item.img} width={50} height={50}/>
-                  <div className='flex gap-[10px] '>
+                  <div className='flex gap-[10px] px-3'>
                     <span className='font-bold'>{item.no}</span>
                     <div>
                     <h2 className="font-bold text-2xl">{item.title}</h2>
-                    <p className='w-[350px] tex-sm'>{item.note}</p></div>
+                    <p className='md:w-[350px] tex-sm'>{item.note}</p></div>
                   </div>
                 </div>
               )
@@ -393,16 +451,16 @@ Lowest rates in tne market
 
 </div>
 
-     <div className='relative bg-[#E6E6E6]  h-[930px] p-[30px]'>
+     <div className='relative bg-[#E6E6E6]  md:h-[930px] p-[30px]'>
       <div className='  flex flex-col items-center justify-center'>
         <div>
         <div className='flex gap-[20px] mt-[50px] '>
       <h3 className='text-[#0582CA] font-bold text-2xl'>06</h3> <span className='text-2xl text-[#929292]'>-</span> <h3 className='text-[#0582CA] font-bold text-2xl'>08</h3>
     </div>
-    <div className='flex items-center'>
-      <h1 className='font-bold text-4xl leading-[50px] w-[450px]'>See what people are<br/> saying about Breew</h1>
+    <div className='flex items-center flex-col md:flex-row p-4'>
+      <h1 className='font-bold text-4xl leading-[50px] md:w-[450px]'>See what people are<br/> saying about Breew</h1>
 
-      <div className='flex gap-[30px] mt-[50px] ml-[80px]'>
+      <div className='flex gap-[30px] mt-[50px] md:ml-[80px]'>
             <button className="bg-[#0582CA] p-2 rounded-2xl w-[150px] text-white h-[60px] shadow font-bold">Download app</button>
             <button className="bg-white shadow p-2 rounded-2xl w-[150px] text-[#0582CA] h-[60px] font-bold">All reviews</button>
             </div>
@@ -412,10 +470,10 @@ Lowest rates in tne market
 
 
         <div>
-          <div className='grid grid-cols-2 gap-[30px] mt-[60px]'>
+          <div className='grid grid-cols-1 md:grid-cols-2 gap-[30px] mt-[60px]'>
             {
               testimonials.map((item)=>{
-                return(<div className="bg-white w-[400px] h-[250px] rounded-3xl p-4 ">
+                return(<div className="bg-white md:w-[400px] h-[250px] rounded-3xl p-4 ">
                   <div>
                     <h2 className="font-bold text-1xl">"{item.heading}"</h2>
                     <p className="mt-[30px] text-sm">{item.note}</p>
@@ -446,14 +504,14 @@ Lowest rates in tne market
      </div>
 
 
-     <div className="h-[600px]">
+     <div className="md:h-[600px]">
 <div className='  flex flex-col items-center justify-center'>
      <div>
         <div className='flex gap-[20px] mt-[50px] '>
       <h3 className='text-[#0582CA] font-bold text-2xl'>07</h3> <span className='text-2xl text-[#929292]'>-</span> <h3 className='text-[#0582CA] font-bold text-2xl'>08</h3>
     </div>
     <div className='flex items-center'>
-      <h1 className='font-bold text-4xl leading-[50px] w-[450px]'>Latest resources</h1>
+      <h1 className='font-bold text-4xl leading-[50px] md:w-[450px]'>Latest resources</h1>
 
     
 
@@ -461,10 +519,10 @@ Lowest rates in tne market
         </div>
 
         <div className='flex flex-col items-center justify-center'>
-          <div className='grid grid-cols-3 gap-[30px] mt-[50px]'>
+          <div className='grid grid-cols-1 md:grid-cols-3 gap-[30px] mt-[50px]'>
             {
               resources.map((item)=>{
-              return( <div className='w-[220px] bg-white rounded-2xl shadow h-[250px] flex flex-col items-center p-4 '>
+              return( <div className='md:w-[220px] bg-white rounded-2xl shadow h-[250px] flex flex-col items-center p-4 '>
                 <Image src={item.img} width={200} height={100}/>
                 <div className='mt-[10px]'>
                   <p className='text-sm'>APPS - {item.date}</p>
@@ -487,14 +545,14 @@ Lowest rates in tne market
      </div>
 
 
-     <div className='h-[670px] bg-[#E6E6E6]'>
+     <div className='md:h-[670px] bg-[#E6E6E6]'>
       <div className='flex flex-col items-center justify-center'>  
          <div className='flex gap-[20px] mt-[50px] '>
       <h3 className='text-[#0582CA] font-bold text-2xl'>08</h3> <span className='text-2xl text-[#929292]'>-</span> <h3 className='text-[#0582CA] font-bold text-2xl'>08</h3>
     </div>
-    <h1 className='font-bold text-4xl leading-[50px] w-[450px] text-center'>Download the crypto<br/> wallet of the future</h1>
+    <h1 className='font-bold md:text-4xl text-3xl md:leading-[50px] md:w-[450px] text-center'>Download the crypto<br/> wallet of the future</h1>
 
-    <div className='flex gap-[30px] mt-[50px]'>
+    <div className='flex gap-[30px] mt-[50px] flex-col md:flex-row'>
             <button className="bg-white p-3 rounded-2xl w-[230px] text-[#0582CA]  h-[60px] shadow flex gap-[20px] items-center justify-center text-sm font-bold cursor-pointer"> <Image src="/Group 8738.png" width={30} height={100}/>Download for IOS</button>
             <button className="bg-white shadow p-3 rounded-2xl w-[230px] text-[#0582CA] h-[60px] flex gap-[20px] items-center justify-center text-sm font-bold cursor-pointer"><Image src="/Group 8739.png" width={30} height={100}/>Download For Apple</button>
             </div>
@@ -518,17 +576,17 @@ Lowest rates in tne market
      </div>
 
 
-     <div className='mt-[50px] h-[200px]'>
+     <div className='mt-[50px] md:h-[200px] py-4'>
 
-      <div className="flex justify-around items-center">
+      <div className="flex justify-around md:items-center flex-col md:flex-row'">
 
-        <div className='w-[400px]'>
+        <div className='md:w-[400px] px-3'>
           <h1 className='font-bold text-2xl'>Breew</h1>
 
           <p>Breew gives you the opportunity to buy rapidly growing crypto currency from your phone</p>
         </div>
 
-      <div className='flex gap-[30px] mt-[50px]'>
+      <div className='flex gap-[30px] mt-[50px] flex-col md:flex-row px-3'>
             <button className="bg-white p-3 rounded-2xl w-[230px] text-[#0582CA]  h-[60px] shadow flex gap-[20px] items-center justify-center text-sm font-bold cursor-pointer"> <Image src="/Group 8738.png" width={30} height={100}/>Download for IOS</button>
             <button className="bg-white shadow p-3 rounded-2xl w-[230px] text-[#0582CA] h-[60px] flex gap-[20px] items-center justify-center text-sm font-bold cursor-pointer"><Image src="/Group 8739.png" width={30} height={100}/>Download For Apple</button>
             </div>
@@ -537,6 +595,10 @@ Lowest rates in tne market
       </div>
 
      </div>
+
+     <hr className='mb-[80px]'/>
+
+     <Footer/>
      
     </>
   )

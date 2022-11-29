@@ -4,14 +4,14 @@ import Image from 'next/image'
 function Navbar() {
   return (
     <>
-<nav className='flex justify-around items-center py-[36px]'>
+<nav className='flex justify-around items-center py-[36px] '>
     <div>
         <Image src="/Group 8697.png" width={150} height={50} />
 
     </div>
 
     <div>
-        <ul className='flex justify-around items-center gap-[20px]'>
+        <ul className='md:flex justify-around items-center gap-[20px] hidden'>
             <li>Home</li>
             <li>About</li>
             <li>Token</li>
